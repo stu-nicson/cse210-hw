@@ -4,26 +4,24 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<double> x = new(); 
-        // x.Add(100.5);
+        // Console.WriteLine("Hello Sandbox World!");
+        Costume nurse = new Costume();
+        nurse._headWear = "face mask";
+        nurse._gloves = "nitrile"; 
+        nurse._shoes = "orthopedic sneakers";
+        nurse._upperGarment = "scrubs";
+        nurse._lowerGarment = "scrubs";
+        nurse._accessory = "stethoscope";
 
-        Console.WriteLine("Hello Sandbox World!");
+        Costume detective = new Costume();
+        detective._headWear = "fedora";
+        detective._gloves = "leather"; 
+        detective._shoes = "loafers";
+        detective._upperGarment = "trench coat";
+        detective._lowerGarment = "slacks";
+        detective._accessory = "magnifier";
 
-        //Gather data to fill up a list
-
-        double input = -1;
-
-        while(input != 0)
-        {
-            Console.Write("Enter Something: ");
-            string input_string = Console.ReadLine();
-            input = double.Parse(input_string);
-            x.Add(input);
-        }
-
-        foreach (double number in x)
-        {
-            Console.WriteLine(number);
-        }
+        nurse.ShowWardrobe();
+        detective.ShowWardrobe();
     }
 }

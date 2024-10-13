@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("Please select one of the Following choices \n 1. Write \n 2. Display \n 3. Load \n 4. Save \n 5. Quit \n What would you like to do:");
         // Console.WriteLine("Hello Sandbox World!");
         Costume nurse = new Costume();
         nurse._headWear = "face mask";

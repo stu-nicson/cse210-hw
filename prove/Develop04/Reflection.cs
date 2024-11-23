@@ -86,7 +86,7 @@ public class Reflection : Activity
                 Console.WriteLine("");
                 Prompt();
                 Reflect(duration);
-                EndMessage(duration, "Reflection");
+                EndMessage(duration, "Reflections");
             }        
 
 

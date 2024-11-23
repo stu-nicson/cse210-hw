@@ -1,0 +1,15 @@
+Checklist
+True
+Temple goal
+attend the temple 2 times
+50
+2
+2
+100
+200
+SimpleGoal
+False
+Running
+Run a mile
+50
+0

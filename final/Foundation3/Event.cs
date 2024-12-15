@@ -78,7 +78,7 @@ public class Event
 
     public string StandardDetails()
     {
-        string standardDetails = $"Standard Details\n------------------\nTitle: {_title}\nDescription: {_description}\nDate: {_date}\nTime: {_time}\nAddress: {_address}\n";
+        string standardDetails = $"Standard Details\n------------------\nTitle: {_title}\nDescription: {_description}\nDate: {_date}\nTime: {_time}\nAddress: {_address.DisplayAddress()}\n";
         return standardDetails;
     }
 
@@ -90,7 +90,7 @@ public class Event
 
     public virtual string FullDetails()
     {
-        string fullDetails = $"Full Details\n------------------\nEvent: {_eventType}\nTitle: {_title}\nDescription: {_description}\nDate: {_date}\nTime: {_time}\nAddress: {_address}";
+        string fullDetails = $"Full Details\n------------------\nEvent: {_eventType}\nTitle: {_title}\nDescription: {_description}\nDate: {_date}\nTime: {_time}\nAddress: {_address.DisplayAddress()}";
         return fullDetails;
     }
 }
